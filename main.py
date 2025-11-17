@@ -1,7 +1,7 @@
 import os
 import secrets
 from datetime import datetime, timedelta, timezone
-from typing import List, Optional
+from typing import Optional
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -86,25 +86,43 @@ def seed_data():
                     "category": "perfumes",
                     "supplier_names": ["AromaHub"],
                     "description": "Verified perfume suppliers, pricing sheets, outreach scripts",
-                    "price": 39.0,
+                    "price": 9.99,
                     "file_path": "downloads/perfume-pack-2025.pdf",
                     "cover_image": "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop"
                 },
                 {
-                    "title": "Sneaker Plug Directory",
+                    "title": "Sneaker Plug Directory 2025",
                     "category": "shoes",
                     "supplier_names": ["SneakSupply"],
                     "description": "Top-tier sneaker wholesalers + import guide",
-                    "price": 29.0,
+                    "price": 9.99,
                     "file_path": "downloads/sneaker-plug-2025.pdf",
                     "cover_image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
                 },
                 {
-                    "title": "Mixed Mega Bundle",
+                    "title": "Apparel Supplier Pack 2025",
+                    "category": "apparel",
+                    "supplier_names": ["WearWave"],
+                    "description": "Streetwear, basics e private label: contatti diretti e listini",
+                    "price": 9.99,
+                    "file_path": "downloads/apparel-pack-2025.pdf",
+                    "cover_image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop"
+                },
+                {
+                    "title": "Electronics Supplier Pack 2025",
+                    "category": "electronics",
+                    "supplier_names": ["ElectraDepot"],
+                    "description": "Gadget, accessori e small electronics per e-commerce",
+                    "price": 9.99,
+                    "file_path": "downloads/electronics-pack-2025.pdf",
+                    "cover_image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop"
+                },
+                {
+                    "title": "All Suppliers Mega Bundle 2025",
                     "category": "mixed",
                     "supplier_names": ["AromaHub", "SneakSupply", "WearWave", "ElectraDepot"],
-                    "description": "All-in-one mega bundle across all categories",
-                    "price": 79.0,
+                    "description": "Bundle completo: profumi, scarpe, apparel, elettronica",
+                    "price": 49.99,
                     "file_path": "downloads/mega-bundle-2025.zip",
                     "cover_image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
                 }
